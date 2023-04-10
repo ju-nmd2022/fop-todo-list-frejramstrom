@@ -24,7 +24,9 @@ function setItems(items) {
 }
 
 //We now define the logic now to define a new object
-
+//Unshift means to add a new element to the beginning of the array
+//Use setItems to add the Items in the array
+//refreshList will take the items and render it to the user
 function addItem() {
   items.unshift({
     description: "",
@@ -33,4 +35,8 @@ function addItem() {
 
   setItems(items);
   refreshList();
+}
+
+function refreshList() {
+  //todo: sort items?
 }
