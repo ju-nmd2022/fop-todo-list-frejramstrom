@@ -44,8 +44,8 @@ function refreshList() {
 
   for (const item of items) {
     const itemElement = ITEM_TEMPLATE.contentEditable.cloneNode(true);
-    const descriptionInput = itemElement.querySelection(".item-description");
-    const completedInput = itemElement.querySelection(".item-completed");
+    const descriptionInput = itemElement.querySelector(".item-description");
+    const completedInput = itemElement.querySelector(".item-completed");
 
     descriptionInput.value = item.description;
     completedInput.checked = item.completed;
