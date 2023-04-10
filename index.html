@@ -9,7 +9,8 @@
     <script src="java.js" defer></script>
   </head>
   <body>
-    <div id="items">
+    <div id="items"></div>
+    <template id="itemTemplate">
       <div class="item">
         <input type="checkbox" class="item-completed" />
         <input
@@ -18,7 +19,8 @@
           placeholder="To-Do item..."
         />
       </div>
-    </div>
+    </template>
+    <!-- /* The reason I have template here and why the divs are gone, is because we use the templates to create the divs in the JS code. They are still there, but no visible yet.  */ -->
     <button id="add">Add Item</button>
   </body>
 </html>
