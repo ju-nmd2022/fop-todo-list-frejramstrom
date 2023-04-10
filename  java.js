@@ -39,8 +39,22 @@ function addItem() {
 
 function refreshList() {
   //todo: sort items?
+
+  ITEMS_CONTAINER.innerHTML = "";
+
+  for (const item of items) {
+    const itemElement = ITEM_TEMPLATE.contentEditable.cloneNode(true);
+    const descriptionInput = itemElement.querySelection(".item-description");
+    const completedInput = itemElement.querySelection(".item-completed");
+
+    descriptionInput.value = item.description;
+    completedInput.checked = item.completed;
+
+    ITEMS_CONTAINER.append(itemElement);
+  }
 }
 
+//when pressing button, it add bars
 ADD_BUTTON.addEventListener("click", () => {
   addItem();
 });
