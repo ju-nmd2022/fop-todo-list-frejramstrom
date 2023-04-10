@@ -1,4 +1,23 @@
-.item.description/*
+.item.description {
+  padding: 5px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.item-completed:checked + .item-description {
+  background: #009578;
+  text-decoration: line-through;
+}
+
+#add {
+  padding: 8px 14px;
+  font-weight: bold;
+  color: #fff;
+  background: #eab676;
+  cursor: pointer;
+}
+
+/*
 html,
 body {
   margin: 0;
@@ -35,4 +54,4 @@ main {
 
 /*
 Body, Header + Logo text is copied or inspired from Garrit's Hamster lessons
-*/;
+*/ ;
