@@ -40,3 +40,9 @@ function addItem() {
 function refreshList() {
   //todo: sort items?
 }
+
+ADD_BUTTON.addEventListener("click", () => {
+  addItem();
+});
+
+refreshList();
