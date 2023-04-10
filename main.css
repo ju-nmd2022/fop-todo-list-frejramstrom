@@ -1,3 +1,4 @@
+.item.description/*
 html,
 body {
   margin: 0;
@@ -30,6 +31,8 @@ main {
   max-height: 10rem;
 }
 
-/*
-Body, Header + Logo text is copied from Garrit's Hamster lessons
 */
+
+/*
+Body, Header + Logo text is copied or inspired from Garrit's Hamster lessons
+*/;

@@ -9,15 +9,16 @@
     <script src="java.js" defer></script>
   </head>
   <body>
-    <header>
-      <img src="img/logo.PNG" class="logo" />
-      <div id="login">
-        <input type="text" />
-        <button>Hej</button>
+    <div id="items">
+      <div class="item">
+        <input type="checkbox" class="item-completed" />
+        <input
+          type="text"
+          class="item-description"
+          placeholder="To-Do item..."
+        />
       </div>
-    </header>
-    <main class="container">
-      <div class="content" id="content"></div>
-    </main>
+    </div>
+    <button id="add">Add Item</button>
   </body>
 </html>
