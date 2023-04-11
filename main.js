@@ -2,6 +2,7 @@
 const ITEMS_CONTAINER = document.getElementById("items");
 const ITEM_TEMPLATE = document.getElementById("itemTemplate");
 const ADD_BUTTON = document.getElementById("add");
+const DELETE_BUTTON = document.getElementById("removeText");
 
 //These lines fetch existing items from the localstorage.
 //To avoid null, in case if we user opens the website first time, we have or to an empty Array.
@@ -35,6 +36,13 @@ function addItem() {
 
   setItems(items);
   refreshList();
+}
+
+function removeItem() {
+  items.splice(index, 1); // Removes 1 item at the given index from the 'items' array
+
+  setItems(items); // Update the state or data model with the updated 'items' array
+  refreshList(); // Refresh the view to reflect the changes
 }
 
 function updateItem(item, key, value) {
@@ -71,6 +79,12 @@ function refreshList() {
 //when pressing button, it add bars
 ADD_BUTTON.addEventListener("click", () => {
   addItem();
+});
+
+refreshList();
+
+DELETE_BUTTON.addEventListener("click", () => {
+  removeItem();
 });
 
 refreshList();
