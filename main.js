@@ -39,9 +39,9 @@ function addItem() {
 }
 
 function removeItem() {
-  items.splice(index, 1); // Removes 1 item at the given index from the 'items' array
-
-  setItems(items); // Update the state or data model with the updated 'items' array
+  items = []; // Removes all items from the 'items' array
+  setItems(items); // Update local storage with the empty 'items' array
+  localStorage.removeItem("todo"); // Remove the 'todo' item from local storage
   refreshList(); // Refresh the view to reflect the changes
 }
 
@@ -52,8 +52,6 @@ function updateItem(item, key, value) {
 }
 
 function refreshList() {
-  //todo: sort items?
-
   ITEMS_CONTAINER.innerHTML = "";
 
   for (const item of items) {
@@ -80,7 +78,6 @@ function refreshList() {
 ADD_BUTTON.addEventListener("click", () => {
   addItem();
 });
-
 refreshList();
 
 DELETE_BUTTON.addEventListener("click", () => {
