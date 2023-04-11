@@ -17,6 +17,10 @@
   cursor: pointer;
 }
 
+.delete {
+  cursor: pointer;
+}
+
 /*
 html,
 body {
