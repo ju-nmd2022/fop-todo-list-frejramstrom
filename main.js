@@ -1,8 +1,9 @@
 //READ ME
-//I have heavily inspired by this video to make this to do list
+//I have heavily inspired by this video to make this to do list through HTML CSS JS.
 //https://youtu.be/cijPd-TXPn4
 //Credits:dCode
-//I used that guide step to step, then re-wrote it a little bit, and explained each section, to know what was going on.
+//I used that guide step to step, then re-wrote some, and explained each section, to know what was going on.
+//this way, I learned each step, and what they do. I wrote details about each part of the code.
 
 //Added "rules", they will always be referenced to the HTML//
 const itemsContainer = document.getElementById("items");
