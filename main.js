@@ -80,8 +80,8 @@ function refreshList() {
       updateItem(item, "description", descriptionInput.value);
     });
 
-    descriptionInput.addEventListener("change", () => {
-      updateItem(item, "completed", descriptionInput.checked);
+    completedInput.addEventListener("change", () => {
+      updateItem(item, "completed", completedInput.checked);
     });
 
     itemsContainer.appendChild(itemElement);
