@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checklist</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <img src="./img/school.jpeg" alt="school" class="school" />
+    <img src="./img/bathtub.png" alt="bathtub" class="bath" />
+    <img src="./img/logo.PNG" alt="logoMulle" class="mulle" />
+    <img src="./img/mullespeech.gif" alt="mulleSpeech" class="bubble" />
+
+    <div id="items"></div>
+    <template id="itemTemplate">
+      <div class="item">
+        <input type="checkbox" class="item-completed" />
+        <input
+          type="text"
+          class="item-description"
+          placeholder="Add Tools..."
+        />
+      </div>
+    </template>
+    <!-- /* The reason I have template here and why the divs are gone,
+    is because we use the templates to create the divs in the JS code. 
+    They are still there, but no visible yet.  */ -->
+    <button class="addButton" id="add">Add Item</button>
+    <button class="delete" id="removeText">❌</button>
+  </body>
+</html>

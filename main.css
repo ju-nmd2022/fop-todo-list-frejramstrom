@@ -1,0 +1,54 @@
+.item.description {
+  padding: 5px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.item-completed:checked + .item-description {
+  background: #009578;
+  text-decoration: line-through;
+}
+
+#add {
+  padding: 8px 14px;
+  font-weight: bold;
+  color: #fff;
+  background: #eab676;
+  cursor: pointer;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+body {
+  background-color: #365577;
+}
+.mulle {
+  position: absolute;
+  transform: scaleX(-1);
+  margin-left: 150px;
+  margin-top: 0px;
+}
+.school {
+  background-image: url(school.jpeg);
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  margin-left: 175px;
+}
+
+.bath {
+  position: absolute;
+  width: 15%;
+  height: 15%;
+  margin-left: 700px;
+  margin-top: 650px;
+}
+
+.bubble {
+  position: absolute;
+  width: 55%;
+  height: 15%;
+  margin-left: 500px;
+}
